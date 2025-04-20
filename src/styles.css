@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* For mobile (screens smaller than 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
+  
+  /* For tablets (screens 600px to 900px) */
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .container {
+      flex-direction: row; /* Row layout for tablets */
+    }
+  }
+  
+  /* For desktops (screens larger than 900px) */
+  @media screen and (min-width: 900px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .home-btn {
+    position: fixed; /* Keeps the button in place while scrolling */
+    bottom: 20px; /* Position it near the bottom of the screen */
+    right: 20px; /* Position it on the right side */
+    background-color: #4b3d33; /* Brown background color to match the theme */
+    color: white; /* Text color */
+    font-size: 1.2rem; /* Font size */
+    padding: 10px 20px; /* Padding for a comfortable click area */
+    border-radius: 30px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a pop-out effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .home-btn:hover {
+    background-color: #a9825c; /* Lighter brown on hover */
+    transform: scale(1.1); /* Slightly increase size on hover for interactivity */
+  }
+  
+  .home-btn:active {
+    transform: scale(0.95); /* Slight shrink when clicked */
+  }
