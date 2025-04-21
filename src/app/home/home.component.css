@@ -20,13 +20,15 @@ body {
 }
 
 .engagement-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; 
+  height: 100vh;
+  width: 115vw; /* Full width */
+  object-fit: cover;
+  object-position: center;
+
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Push image to the back */
+  z-index: -1; 
 }
 
 /* Navbar styles */
@@ -166,6 +168,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+  margin-top: 1rem;
 }
 
 .couple-names {
@@ -233,66 +236,3 @@ body {
 .faq-link {
   height: 100vh;
 }
-
-/* Responsive Styles */
-@media (max-width: 600) {
-  .home-container {
-    padding-top: 10vh;
-  }
-
-  .title-container {
-    font-size: 1.5rem;
-    padding-top: 15vh;
-  }
-
-  .faq-link {
-    font-size: 1.2rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  .nav-left, .nav-right {
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .countdown-clock {
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 1rem;
-  }
-
-  .couple-names {
-    font-size: 2.5rem;
-    margin-top: 5rem;
-  }
-
-  .wedding-date,
-  .wedding-location {
-    font-size: 1.2rem;
-  }
-
-  .rsvp-btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  .rsvp-btn:hover {
-    background: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    );
-  }
-}
-
