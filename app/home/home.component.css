@@ -151,7 +151,6 @@ body {
   text-align: center;
   height: 100vh;
   width: 100%;
-  padding: 4rem;
   color: white;
   position: relative;
   z-index: 1;
@@ -164,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-start;
   flex-grow: 1;
 }
 
@@ -178,14 +177,14 @@ body {
 }
 
 .wedding-date {
-  /* margin-top: -1.5rem; */
+  margin-top: 1.0rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
 }
 
 .wedding-location {
-  /* margin-top: -1rem; */
+  margin-top: 1rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
@@ -195,20 +194,21 @@ body {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  padding: 1rem;
   font-weight: 200;
 }
 
 .countdown-clock {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  justify-content:flex-start;
   font-size: 1.2rem;
   font-weight: 200;
-  margin-bottom: 1rem;
+  gap: 2rem;
+  /* margin-top: -4rem; */
+  
 }
 
 .countdown-clock div {
+  margin-top: -150px;
   display: flex;
   font-weight: 200;
   flex-direction: column;
