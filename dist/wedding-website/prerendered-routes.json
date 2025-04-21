@@ -1,6 +1,8 @@
 {
   "routes": {
     "/": {},
-    "/faq": {}
+    "/faq": {},
+    "/things-to-do": {},
+    "/travel": {}
   }
 }

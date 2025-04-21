@@ -35,13 +35,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-decoration: none; /* Remove underline */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a pop-out effect */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it stays on top of other elements */
   }
   
   .home-btn:hover {
     background-color: #a9825c; /* Lighter brown on hover */
     transform: scale(1.1); /* Slightly increase size on hover for interactivity */
+    z-index: 1000; /* Ensure it stays on top of other elements */
   }
   
   .home-btn:active {
     transform: scale(0.95); /* Slight shrink when clicked */
+    z-index: 1000; /* Ensure it stays on top of other elements */
   }
