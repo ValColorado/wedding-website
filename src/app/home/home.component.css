@@ -218,6 +218,7 @@ body {
   font-weight: 200;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .countdown-clock small {
@@ -235,4 +236,38 @@ body {
 /* FAQ Link Styles */
 .faq-link {
   height: 100vh;
+}
+
+
+@media screen and (max-width: 600px) {
+  .couple-names {
+    font-size: 2.5rem;
+  }
+  .engagement-image {
+    height: 100vh;
+    width: 100%; /* Full width */
+    object-fit: cover;
+    object-position: 40% 20%;
+  }
+
+  .countdown-clock div{
+    margin-top: -10rem;
+  }
+
+  .countdown-clock small {
+    font-size: 0.5rem;
+  }
+  .countdown-clock small {
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+  }
+  
+  .countdown-clock span {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #fff;
+  }
+  
+  
 }
