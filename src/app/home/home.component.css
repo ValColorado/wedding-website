@@ -44,18 +44,6 @@ body {
   z-index: 10;
 }
 
-.nav-left, .nav-right {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.nav-left a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-  transition: color 0.3s ease;
-}
 
 .nav-right a {
   color: white;
@@ -64,9 +52,6 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-left a:hover {
-  color: #f0c7ff;
-}
 
 .nav-right a:hover {
   color: white;
@@ -81,37 +66,17 @@ body {
 
 /* RSVP Button */
 .rsvp-btn {
+  font-family: 'Baloo 2', cursive;
+  display: inline-block;
+  padding: 1.2rem 10px;
+  height: auto;
+  font-size: 1.75rem;
+  font-weight: 600;
   color: white;
-  background: transparent;
-  border: 2px solid white;
-  padding: 0.5rem 1.25rem;
-  border-radius: 999px;
-  transition: box-shadow 0.4s ease, background 0.4s ease;
-  position: relative;
+  border-radius: 20px;
 }
 
-.rsvp-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  border-radius: inherit;
-}
+
 
 .rsvp-btn:hover {
   background: linear-gradient(
@@ -126,23 +91,12 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: wheat;
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 
-.rsvp-btn:focus {
-  outline: none;
-  box-shadow: 0 0 5px red,
-  0 0 10px orange,
-  0 0 15px yellow,
-  0 0 20px green,
-  0 0 25px blue,
-  0 0 30px indigo,
-  0 0 35px violet;
-}
 
-.rsvp-btn:active {
-  background-color: #e0b3ff;
-}
 
 /* Title Container and Text */
 .title-container {
@@ -234,15 +188,57 @@ body {
 }
 
 /* FAQ Link Styles */
+
 .faq-link {
-  height: 100vh;
+  font-family: 'Baloo 2', cursive;
+  display: inline-block;
+  padding: 1.2rem 10px;
+  height: auto;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+}
+.faq-link:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.travel-link {
+  font-family: 'Baloo 2', cursive;
+  display: inline-block;
+  padding: 1.2rem 10px;
+  height: auto;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+}
+.travel-link:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.to-do-link {
+  font-family: 'Baloo 2', cursive;
+  display: inline-block;
+  padding: 1.2rem 10px;
+  height: auto;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+}
+.to-do-link:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 
 
-@media screen and (max-width: 600px) {
-  .couple-names {
-    font-size: 2.5rem;
-  }
+
   .engagement-image {
     height: 100vh;
     width: 100%; /* Full width */
@@ -251,7 +247,7 @@ body {
   }
 
   .countdown-clock div{
-    margin-top: -10rem;
+    margin-top: -12rem;
   }
 
   .countdown-clock small {
@@ -269,5 +265,63 @@ body {
     color: #fff;
   }
   
+
+  @media (max-width: 768px) {
+    /* Example: Stack nav links vertically for mobile */
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
   
-}
+    .nav-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+  
+    .title-content {
+      margin-top: 2rem;
+    }
+  
+    .couple-names {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  
+    .wedding-date,
+    .wedding-location {
+      font-size: 1rem;
+    }
+  
+    .countdown-clock {
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  
+    .countdown-clock span {
+      font-size: 1.75rem;
+    }
+  
+    .faq-link,
+    .travel-link,
+    .to-do-link,
+    .rsvp-btn {
+      font-size: 1.25rem;
+      padding: 0.75rem;
+    }
+  
+    .engagement-image {
+      object-position: center center;
+      height: 100vh;
+      width: 100vw;
+    }
+  
+    .home-container {
+      overflow-y: auto;
+    }
+  }
+  
